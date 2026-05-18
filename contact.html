@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ちばらき珈琲へのお問い合わせ窓口。出張コーヒー教室の具体的なご依頼・ご相談や、コーヒー豆の仕入れ、一般のご質問などはこちらのフォームよりお気軽にご連絡ください。">
+  <title>お問い合わせ | ちばらき珈琲</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header id="main-header" class="site-header scrolled">
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <img src="ロゴ.png" alt="ちばらき珈琲 ロゴ" class="header-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="logo-fallback">ちばらき珈琲</span>
+      </a>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">ホーム</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">私たちについて</a></li>
+          <li class="nav-item"><a href="peaberry.html" class="nav-link">ピーベリーとは</a></li>
+          <li class="nav-item"><a href="index.html#online-shop" class="nav-link">オンライン販売</a></li>
+          <li class="nav-item"><a href="seminar.html" class="nav-link">出張コーヒー教室</a></li>
+          <li class="nav-item"><a href="index.html#shop-info" class="nav-link">店舗情報</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero-section">
+    <div class="subpage-hero-overlay"></div>
+    <div class="subpage-hero-content">
+      <span class="subpage-subtitle">CONTACT</span>
+      <h1 class="subpage-title">お問い合わせ</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">ホーム</a> <i class="fa-solid fa-chevron-right divider"></i> <span>お問い合わせ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section section-padding">
+    <div class="container">
+      
+      <div class="max-w-800 text-center">
+        <span class="badge-accent">GET IN TOUCH</span>
+        <h2 class="section-title">ご質問・出張教室のご依頼など</h2>
+        <p class="lead-text" style="color: var(--color-black); margin-bottom: 50px;">
+          コーヒー豆の仕入れ相談、卸売りについて、また出張コーヒーセミナーの具体的な日程や費用調整のご相談など、何でもお気軽にご相談ください。
+        </p>
+      </div>
+
+      <div class="contact-form-container max-w-800 shadow-premium">
+        <form id="inquiry-form" class="premium-form">
+          
+          <div class="form-row grid grid-2-col gap-md">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="form-name" class="form-label">お名前 <span class="required">必須</span></label>
+              <input type="text" id="form-name" name="name" class="input-field" placeholder="山田 太郎" required>
+            </div>
+            
+            <!-- Organization Name -->
+            <div class="form-group">
+              <label for="form-org" class="form-label">団体・企業名 <span class="optional">任意</span></label>
+              <input type="text" id="form-org" name="organization" class="input-field" placeholder="〇〇自治会、〇〇株式会社 など">
+            </div>
+          </div>
+
+          <div class="form-row grid grid-2-col gap-md">
+            <!-- Email -->
+            <div class="form-group">
+              <label for="form-email" class="form-label">メールアドレス <span class="required">必須</span></label>
+              <input type="email" id="form-email" name="email" class="input-field" placeholder="example@domain.com" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="form-phone" class="form-label">電話番号 <span class="required">必須</span></label>
+              <input type="tel" id="form-phone" name="phone" class="input-field" placeholder="090-0000-0000" required>
+            </div>
+          </div>
+
+          <!-- Inquiry Type -->
+          <div class="form-group">
+            <label class="form-label">お問い合わせ種別 <span class="required">必須</span></label>
+            <div class="radio-options-grid">
+              <label class="radio-container">
+                <input type="radio" name="inquiry_type" id="type-general" value="general" checked>
+                <span class="radio-mark"></span>
+                <span class="radio-label">一般のお問い合わせ・ご質問</span>
+              </label>
+              <label class="radio-container">
+                <input type="radio" name="inquiry_type" id="type-workshop" value="workshop">
+                <span class="radio-mark"></span>
+                <span class="radio-label">出張コーヒー教室の依頼・相談</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Conditional fields for workshop (via JS) -->
+          <div id="workshop-form-details" class="conditional-fields-box">
+            <h4 class="conditional-title"><i class="fa-solid fa-circle-question"></i> セミナーのご希望条件（決まっている範囲で結構です）</h4>
+            
+            <div class="grid grid-3-col gap-sm margin-top-sm">
+              <div class="form-group">
+                <label for="form-date" class="form-label">希望日程</label>
+                <input type="date" id="form-date" name="preferred_date" class="input-field">
+              </div>
+              
+              <div class="form-group">
+                <label for="form-people" class="form-label">予定参加人数</label>
+                <input type="number" id="form-people" name="participants_count" class="input-field" min="1" max="100" placeholder="例: 15">
+              </div>
+
+              <div class="form-group">
+                <label for="form-location" class="form-label">開催予定場所（市町村）</label>
+                <input type="text" id="form-location" name="location" class="input-field" placeholder="例: 守谷市">
+              </div>
+            </div>
+
+            <div class="form-group margin-top-sm">
+              <label class="form-label">ご希望のコース</label>
+              <div class="checkbox-options-row">
+                <label class="checkbox-container">
+                  <input type="checkbox" name="courses" value="drip">
+                  <span class="checkmark"></span>
+                  <span class="check-label">① ハンドドリップ抽出体験 (120分)</span>
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="courses" value="history">
+                  <span class="checkmark"></span>
+                  <span class="check-label">② 歴史とフェアトレードのお話 (120分)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="form-message" class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
+            <textarea id="form-message" name="message" class="textarea-field" rows="6" placeholder="お問い合わせ内容やご依頼の詳細、ご要望などを詳しくご入力ください。" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-action text-center">
+            <button type="submit" class="btn btn-primary btn-lg btn-submit">
+              上記の内容で送信する <i class="fa-regular fa-paper-plane btn-icon-right"></i>
+            </button>
+          </div>
+
+          <!-- Success Message -->
+          <div id="form-success" class="form-feedback-alert success">
+            <i class="fa-regular fa-circle-check"></i>
+            <div>
+              <strong>お問い合わせを受け付けました。</strong>
+              <p>内容を確認させていただき、通常2営業日以内にご入力いただいたメールアドレス宛に折り返しご連絡いたします。</p>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scroll To Top Button -->
+  <button id="scroll-to-top" class="btn-scroll-top" aria-label="ページトップへ戻る">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="footer-logo-wrapper">
+        <span class="footer-title">ちばらき珈琲</span>
+      </div>
+      
+      <div class="footer-sns-links">
+        <a href="https://www.instagram.com/chibarakicoffee/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-sns-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="peaberry.html">ピーベリーとは</a></li>
+        <li><a href="index.html#online-shop">オンラインストア</a></li>
+        <li><a href="seminar.html">出張コーヒー教室</a></li>
+        <li><a href="index.html#shop-info">店舗情報・アクセス</a></li>
+      </ul>
+
+      <p class="copyright">&copy; 2026 ちばらき珈琲 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+  
+  <!-- Form Intelligent Initialization Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check for query parameters (?type=workshop)
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('type') === 'workshop') {
+        const workshopRadio = document.getElementById('type-workshop');
+        if (workshopRadio) {
+          workshopRadio.checked = true;
+          // Trigger the change event to display the conditional fields
+          const event = new Event('change');
+          workshopRadio.dispatchEvent(event);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
